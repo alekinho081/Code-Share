@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header class="cabeçalho">
+      <a href="index.html" onclick="resetaLogin()"><img src="logo.jpeg" alt="Logo" class="logo"></a>
+      <h1>Login</h1>
+      <div class="dropdown" id="pfpc">
+          <button class="dropbtn"></button>
+          <div class="dropdown-content">
+            <a href="perfil.html">Perfil</a>
+            <a href="criarPost.html">Criar Post</a>
+          </div>
+      </div>
+  </header>
+  <hr>
+  <br>
+  <center>
+    <div class="logapg">
+      <form class="login" action="">
+        <label for="usuario" class="labelL">Usuário</label>
+        <input type="text" id="usuario">
+        <br>
+        <label for="pass" class="labelL">Senha</label>
+        <input type="password" id="pass">
+        <br>
+        <button type="button" id="loga" onclick="logarUser()">Logar</button>
+        <br>
+        <p class="criar">Não possui uma conta?<br><a href="registro.html">Crie uma</a></p>
+      </form>
+    </div>
+  </center>
+</body>
+</html>

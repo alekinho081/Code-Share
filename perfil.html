@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="perfil.js" defer>
+        window.onload = loadButtonBackground;
+    </script>
+</head>
+<body>
+    <header class="cabeçalho">
+        <a href="index.html" onclick="resetaLogin()"><img src="logo.jpeg" alt="Logo" class="logo"></a>
+        <h1>Perfil</h1>
+        <div class="dropdown" id="pfpc">
+            <button class="dropbtn"></button>
+            <div class="dropdown-content">
+              <a href="criarPost.html">Criar Post</a>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <br>
+    <center>
+        <div class="container">
+            <input type="file" id="fileInput" accept="image/*" style="display: none;" onchange="setButtonBackground(event)">
+            <button id="imageButton"></button>
+        </div>
+        <br><br>
+        <div class="edit">
+            <label id="l1">Email</label><br>
+            <input type="text" id="i1" ><br>
+            <label id="l2">Usuario</label><br>
+            <input type="text" id="i2" ><br>
+            <label id="l3">Senha</label><br>
+            <input type="password" id="i3" ><br>
+            <button type="button" id="b2" onclick="salvarPerfil()">Salvar</button>   
+        </div>
+    </center>
+</body>
+</html>
+
+

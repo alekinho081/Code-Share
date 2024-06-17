@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto senai</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="cabeçalho">
+    <a href="index.html" onclick="resetaLogin()"><img src="logo.jpeg" alt="Logo" class="logo"></a>
+    <nav class="navbar">
+      <form class="form-inline">
+      <input class="nav" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+      <button class="botaoPesquisa" type="submit" ><img class="botaoPesquisa" src="lupa.png" alt="botão pesquisar com imagem de lupa"></button>
+      </form>
+    </nav>
+    <div class="dropdown" id="pfpc">
+        <button class="dropbtn"></button>
+        <div class="dropdown-content">
+          <a href="criarPost.html">Criar Post</a>
+        </div>
+    </div>
+</header>
+  <hr>
+  <main id="maina">
+    </div>
+    <div class="posts">
+      <h3 id="titolo"></h3>
+      <br><br>
+      <p id="contente"></p>
+      <br>
+      <hr>
+      <br>
+      <span id="comentarios"></span>
+      <br>
+      <br>
+      <form method="post" netlify class="coment"></form>
+        <label for="coments">Deixe um comentário</label>
+        <br>
+        <textarea name="coments" id="coments" cols="30" rows="10"></textarea>
+        <br>
+        <button  onclick="guardaComent()" type="submit" class="envia">Enviar Comentário</button>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
