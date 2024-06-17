@@ -26,7 +26,7 @@ let usu = localStorage.getItem(user)
 let senh = localStorage.getItem(senha)
 if(usuario == usu && password == senh){
     alert("Login realizado com sucesso")
-    window.location.href='principal.html'
+    window.location.href='perfil.html'
 }else{
     alert("Usuario e/ou senha incorretos")
 }
