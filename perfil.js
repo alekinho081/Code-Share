@@ -30,15 +30,13 @@ function loadButtonBackground() {
 // Chama a função para carregar a imagem ao carregar a página
 window.onload = loadButtonBackground;
 
-/*
-document.getElementById('i1').value = localStorage.getItem(email)
-document.getElementById('i2').value = localStorage.getItem(user)
-document.getElementById('i3').value = localStorage.getItem(senha)
-*/
+document.getElementById('i1').value = localStorage.getItem('item1')
+document.getElementById('i2').value = localStorage.getItem('item2')
+document.getElementById('i3').value = localStorage.getItem('item3')
 
 function salvarPerfil(){
-    localStorage.setItem(email,document.getElementById('i1').value)
-    localStorage.setItem(user,document.getElementById('i2').value)
-    localStorage.setItem(senha,document.getElementById('i3').value)
+    localStorage.setItem('item1',document.getElementById('i1').value)
+    localStorage.setItem('item2',document.getElementById('i2').value)
+    localStorage.setItem('item3',document.getElementById('i3').value)
 } 
 
