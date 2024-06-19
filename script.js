@@ -49,7 +49,7 @@ function verificarLogin() {
     }
 }
 
-if(window.location.pathname != '/login.html' && window.location.pathname != '/registro'){
+if(window.location.pathname != '/login.html' && window.location.pathname != '/registro.html'){
     window.addEventListener('load', verificarLogin)
 }
 //Verifica se o usário está logado ==========================================================================
