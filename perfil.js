@@ -26,10 +26,13 @@ function loadButtonBackground() {
         document.getElementById('imageButton').textContent = ''; // Remove o texto do botão
     }
 }
+// Função para carregar a imagem do localStorage ao carregar a página
 
 // Chama a função para carregar a imagem ao carregar a página
 window.onload = loadButtonBackground;
+// Chama a função para carregar a imagem ao carregar a página
 
+//Mostra os dados do perfil e salva ele =====================================================================
 document.getElementById('i1').value = localStorage.getItem('item1')
 document.getElementById('i2').value = localStorage.getItem('item2')
 document.getElementById('i3').value = localStorage.getItem('item3')
@@ -38,5 +41,22 @@ function salvarPerfil(){
     localStorage.setItem('item1',document.getElementById('i1').value)
     localStorage.setItem('item2',document.getElementById('i2').value)
     localStorage.setItem('item3',document.getElementById('i3').value)
-} 
+}
+//Mostra os dados do perfil e salva ele =====================================================================
 
+//Verifica se o usário está logado ==========================================================================
+function verificarLogin() {
+    let logado = localStorage.getItem('logado');
+    if (logado === 'true') {
+        return true;
+    } else {
+        alert("Usuário não está logado")
+        window.location.href='login.html'
+        return false;
+    }
+}
+
+if(window.location.pathname != '/login.html' && window.location.pathname != '/registro.html'){
+    window.addEventListener('load', verificarLogin)
+}
+//Verifica se o usário está logado ==========================================================================
